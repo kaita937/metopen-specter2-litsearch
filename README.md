@@ -34,3 +34,18 @@ Selanjutnya jalankan seluruh sel pada `notebooks/01_eksplorasi_litsearch.ipynb` 
 - `results/tables/litsearch_query_breakdown.csv`
 - `results/tables/dataset_overview_summary.json`
 - `results/figures/eda_token_length_dist.png` & `.pdf` (`300 DPI`)
+
+### 3. Hari 2 — Asymmetric GPU Encoding SPECTER2 (Colab T4) & Validasi `LitSearch-Neg`
+1. Unggah `notebooks/02_encoding_specter2_colab.ipynb` ke Google Colab (`Runtime -> Change runtime type -> T4 GPU`), lalu klik **Runtime -> Run all**.
+2. Unduh arsip `day2_colab_outputs.zip` dari Google Drive (`MyDrive/metopen_specter2_litsearch_day2/day2_colab_outputs.zip`) dan ekstrak langsung di akar folder proyek ini.
+3. Jalankan verifikasi integritas akhir Hari 2 di lokal:
+```powershell
+.\.venv\Scripts\python.exe -m src.negative_benchmark --verify-only
+```
+
+### 4. Hari 3 — Kalibrasi `β*` (Val 20%), Komparasi `M1–M3` & Uji Wilcoxon (Test 80%)
+Jalankan seluruh sel pada `notebooks/03_evaluasi_dual_input.ipynb` untuk menghasilkan:
+- `embeddings/calibrated_config.json` (nilai terkunci `β*` dari Validation Split `N = 96`)
+- `results/tables/beta_sweep_val.csv` & `results/figures/fig2_beta_calibration.png`/`.pdf` (**Fig. 2** `300 DPI`)
+- `results/tables/metrics_test.csv` (**TABLE II** pada Held-Out Test Split `N = 384`)
+- `results/tables/wilcoxon.csv` (**TABLE III** uji *Paired Wilcoxon* terkoreksi Bonferroni `α_bonf = 0.025`)

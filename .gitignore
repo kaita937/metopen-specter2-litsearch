@@ -6,3 +6,5 @@ data/litsearch/*.jsonl
 data/litsearch/*.parquet
 data/litsearch/qrels/*.tsv
 embeddings/*.npy
+embeddings/checkpoints/
+day2_colab_outputs.zip

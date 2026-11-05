@@ -1,0 +1,19 @@
+{
+  "total_litsearch_queries": 597,
+  "validated_litsearch_neg_queries": 480,
+  "val_count": 96,
+  "test_count": 384,
+  "val_ratio_actual": 0.2,
+  "skipped_no_top5_distractor": 0,
+  "skipped_no_conflict_free_concept": 117,
+  "unique_negative_concepts_used": 108,
+  "title_sourced_pct": 44.58,
+  "mean_violator_docs_per_query": 1409.95,
+  "median_violator_docs_per_query": 550.0,
+  "gold_overlap_conflicts": 0,
+  "val_test_id_overlap": 0,
+  "seed": 42,
+  "top_k_distractors": 5,
+  "active_lexicon_concepts_in_corpus": 184,
+  "construction_seconds": 15.15
+}

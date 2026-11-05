@@ -1,0 +1,58 @@
+{
+  "python_version": "3.13.16",
+  "torch_version": "2.11.0+cu130",
+  "cuda_version": "13.0",
+  "transformers_version": "4.57.6",
+  "adapters_version": "1.3.0",
+  "datasets_version": "4.8.5",
+  "gpu_name": "Tesla T4",
+  "gpu_vram_gb": 14.56,
+  "query_adapter": "Stack[adhoc_query]",
+  "doc_adapter": "Stack[proximity]",
+  "neg_query_adapter": "Stack[adhoc_query]",
+  "batch_size_docs": 128,
+  "batch_size_queries": 64,
+  "fp16_autocast": true,
+  "length_sorted_dynamic_padding": true,
+  "max_seq_length": 512,
+  "q_pos_encoding_seconds": 1.396,
+  "doc_encoding_seconds": 349.296,
+  "q_neg_and_naive_encoding_seconds": 0.822,
+  "shapes": {
+    "doc_emb": [
+      64183,
+      768
+    ],
+    "q_pos_emb": [
+      597,
+      768
+    ],
+    "q_neg_emb": [
+      480,
+      768
+    ],
+    "q_naive_not_emb": [
+      480,
+      768
+    ]
+  },
+  "litsearch_neg_audit": {
+    "total_litsearch_queries": 597,
+    "validated_litsearch_neg_queries": 480,
+    "val_count": 96,
+    "test_count": 384,
+    "val_ratio_actual": 0.2,
+    "skipped_no_top5_distractor": 0,
+    "skipped_no_conflict_free_concept": 117,
+    "unique_negative_concepts_used": 108,
+    "title_sourced_pct": 44.58,
+    "mean_violator_docs_per_query": 1409.95,
+    "median_violator_docs_per_query": 550.0,
+    "gold_overlap_conflicts": 0,
+    "val_test_id_overlap": 0,
+    "seed": 42,
+    "top_k_distractors": 5,
+    "active_lexicon_concepts_in_corpus": 184,
+    "construction_seconds": 15.15
+  }
+}

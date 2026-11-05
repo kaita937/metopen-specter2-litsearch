@@ -1,0 +1,20 @@
+{
+  "beta_star": 0.2,
+  "selection_criterion": "argmax_val_ndcg@10_tiebreak_min_vr@10",
+  "val_queries_count": 96,
+  "val_m1_metrics": {
+    "ndcg@10": 0.2555,
+    "recall@10": 0.3646,
+    "vr@10": 0.1625
+  },
+  "val_m2_metrics": {
+    "ndcg@10": 0.1998,
+    "recall@10": 0.2969,
+    "vr@10": 0.2906
+  },
+  "val_m3_beta_star_metrics": {
+    "ndcg@10": 0.2671,
+    "recall@10": 0.3958,
+    "vr@10": 0.0823
+  }
+}
