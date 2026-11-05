@@ -1,0 +1,112 @@
+{
+  "integrity": {
+    "corpus_count": 64183,
+    "query_count": 597,
+    "total_qrel_pairs": 639,
+    "missing_gold_count": 0,
+    "empty_titles": 6760,
+    "empty_abstracts": 7989
+  },
+  "metadata_completeness": {
+    "both_present": 55631,
+    "title_only": 1792,
+    "abstract_only": 563,
+    "both_empty": 6197
+  },
+  "query_summary": {
+    "total_queries": 597,
+    "broad_specificity_0": 155,
+    "specific_specificity_1": 442,
+    "single_gold_queries": 563,
+    "multi_gold_queries": 34,
+    "mean_gold_per_query": 1.0704,
+    "max_gold_per_query": 5,
+    "unique_gold_papers": 574
+  },
+  "token_stats": [
+    {
+      "component": "Queries (All Q_pos)",
+      "count": 597,
+      "mean_tokens": "26.11",
+      "std_tokens": "7.64",
+      "median_tokens": "25.00",
+      "p95_tokens": "40.00",
+      "min_tokens": 11,
+      "max_tokens": 62,
+      "count_over_512": 0,
+      "pct_over_512": "0.00"
+    },
+    {
+      "component": "Queries - Broad (specificity = 0)",
+      "count": 155,
+      "mean_tokens": "25.57",
+      "std_tokens": "8.23",
+      "median_tokens": "25.00",
+      "p95_tokens": "37.00",
+      "min_tokens": 12,
+      "max_tokens": 62,
+      "count_over_512": 0,
+      "pct_over_512": "0.00"
+    },
+    {
+      "component": "Queries - Specific (specificity = 1)",
+      "count": 442,
+      "mean_tokens": "26.30",
+      "std_tokens": "7.42",
+      "median_tokens": "25.00",
+      "p95_tokens": "41.00",
+      "min_tokens": 11,
+      "max_tokens": 53,
+      "count_over_512": 0,
+      "pct_over_512": "0.00"
+    },
+    {
+      "component": "Corpus Titles Only",
+      "count": 64183,
+      "mean_tokens": "14.28",
+      "std_tokens": "30.45",
+      "median_tokens": "13.00",
+      "p95_tokens": "25.00",
+      "min_tokens": 2,
+      "max_tokens": 3921,
+      "count_over_512": 42,
+      "pct_over_512": "0.07"
+    },
+    {
+      "component": "Corpus Abstracts Only",
+      "count": 64183,
+      "mean_tokens": "162.67",
+      "std_tokens": "130.79",
+      "median_tokens": "153.00",
+      "p95_tokens": "327.00",
+      "min_tokens": 2,
+      "max_tokens": 4931,
+      "count_over_512": 1239,
+      "pct_over_512": "1.93"
+    },
+    {
+      "component": "Corpus Full Input (Title + [SEP] + Abstract)",
+      "count": 64183,
+      "mean_tokens": "175.95",
+      "std_tokens": "135.69",
+      "median_tokens": "166.00",
+      "p95_tokens": "346.00",
+      "min_tokens": 3,
+      "max_tokens": 4934,
+      "count_over_512": 1382,
+      "pct_over_512": "2.15"
+    },
+    {
+      "component": "Corpus Non-Empty Docs Only (Diagnostic)",
+      "count": 57986,
+      "mean_tokens": "194.43",
+      "std_tokens": "129.78",
+      "median_tokens": "176.00",
+      "p95_tokens": "361.00",
+      "min_tokens": 3,
+      "max_tokens": 4934,
+      "count_over_512": 1382,
+      "pct_over_512": "2.38"
+    }
+  ]
+}

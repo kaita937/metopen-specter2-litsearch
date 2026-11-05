@@ -1,0 +1,9 @@
+query_set,specificity,num_queries,mean_tokens,std_tokens,mean_gold
+inline_acl,0,32,32.75,10.15,1.53
+inline_acl,1,66,33.23,8.78,1.18
+inline_nonacl,0,88,24.73,5.40,1.09
+inline_nonacl,1,165,26.81,5.55,1.02
+manual_acl,0,25,19.84,5.73,1.00
+manual_acl,1,130,24.02,6.80,1.00
+manual_iclr,0,10,24.30,12.30,1.10
+manual_iclr,1,81,23.27,6.75,1.00

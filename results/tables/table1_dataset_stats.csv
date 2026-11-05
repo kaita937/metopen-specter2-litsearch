@@ -1,0 +1,8 @@
+component,count,mean_tokens,std_tokens,median_tokens,p95_tokens,min_tokens,max_tokens,count_over_512,pct_over_512
+Queries (All Q_pos),597,26.11,7.64,25.00,40.00,11,62,0,0.00
+Queries - Broad (specificity = 0),155,25.57,8.23,25.00,37.00,12,62,0,0.00
+Queries - Specific (specificity = 1),442,26.30,7.42,25.00,41.00,11,53,0,0.00
+Corpus Titles Only,64183,14.28,30.45,13.00,25.00,2,3921,42,0.07
+Corpus Abstracts Only,64183,162.67,130.79,153.00,327.00,2,4931,1239,1.93
+Corpus Full Input (Title + [SEP] + Abstract),64183,175.95,135.69,166.00,346.00,3,4934,1382,2.15
+Corpus Non-Empty Docs Only (Diagnostic),57986,194.43,129.78,176.00,361.00,3,4934,1382,2.38
