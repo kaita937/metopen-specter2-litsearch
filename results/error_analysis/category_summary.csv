@@ -1,0 +1,4 @@
+category_id,phenomenon,matching_test_queries,pct_of_test_384,representative_query_id
+Category 1,"Negation Blindness on M2 Rescued by M3 (VR_M2 >= VR_M1, VR_M3 < VR_M2, nDCG_M3 > nDCG_M2)",78,20.31%,q_586
+Category 2,"Long Multi-Clause Query (>=20 words, Jaccard <= 0.14) Retrieved in Top-3 by M3",49,12.76%,q_317
+Category 3,Latent Semantic Over-Penalization Boundary (nDCG_M3 < nDCG_M1),39,10.16%,q_580

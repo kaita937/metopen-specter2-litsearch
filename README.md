@@ -49,3 +49,14 @@ Jalankan seluruh sel pada `notebooks/03_evaluasi_dual_input.ipynb` untuk menghas
 - `results/tables/beta_sweep_val.csv` & `results/figures/fig2_beta_calibration.png`/`.pdf` (**Fig. 2** `300 DPI`)
 - `results/tables/metrics_test.csv` (**TABLE II** pada Held-Out Test Split `N = 384`)
 - `results/tables/wilcoxon.csv` (**TABLE III** uji *Paired Wilcoxon* terkoreksi Bonferroni `α_bonf = 0.025`)
+
+### 5. Hari 4 — Error Analysis Kualitatif (`TABLE IV`), Diagram `Fig. 1` & Produk Aplikasi Pencarian
+```powershell
+.\.venv\Scripts\python.exe -m src.error_analysis
+.\.venv\Scripts\python.exe -m src.plot_architecture_fig1
+.\.venv\Scripts\streamlit.exe run demo/app.py
+```
+Luaran yang dihasilkan:
+- `results/error_analysis/category_summary.csv`, `selected_cases.csv`, dan `table4_ieee_draft.md` (**TABLE IV**)
+- `results/figures/fig1_dual_input_architecture.png` & `.pdf` (**Fig. 1** vektor *double-column* `7.16 in`, `300 DPI`)
+- Antarmuka produk pencarian artikel ilmiah dua-masukan pada `demo/app.py` (`β* = 0.2` otomatis tanpa slider, respons `< 10 ms` di CPU)
