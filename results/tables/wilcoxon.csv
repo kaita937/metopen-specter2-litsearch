@@ -1,0 +1,7 @@
+comparison,metric,mean_diff,rel_change_pct,improved_tied_degraded,wilcoxon_stat,p_raw,p_bonf,effect_size_r,significant_at_0.025
+M3 vs. M1,nDCG@10,+0.0016,+0.69%,56 / 289 / 39,2096.5,4.956e-01,9.911e-01,0.0348,False
+M3 vs. M1,Recall@10,-0.0026,-0.73%,10 / 363 / 11,110.0,8.273e-01,1.000e+00,0.0111,False
+M3 vs. M1,VR@10,-0.1159,-58.32%,265 / 119 / 0,0.0,5.092e-47,1.018e-46,0.7349,True
+M3 vs. M2,nDCG@10,+0.0815,+52.16%,96 / 264 / 24,975.5,3.552e-12,7.103e-12,0.3549,True
+M3 vs. M2,Recall@10,+0.0904,+33.95%,46 / 329 / 9,270.0,3.069e-06,6.137e-06,0.2381,True
+M3 vs. M2,VR@10,-0.2797,-77.16%,320 / 64 / 0,0.0,1.962e-54,3.924e-54,0.7928,True
